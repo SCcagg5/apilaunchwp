@@ -15,7 +15,7 @@ class evts:
         "sleep 10",
         "docker exec "+name+"_wp curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar",
         "docker exec "+name+"_wp chmod +x wp-cli.phar",
-        "docker exec "+name+"_wp mv wp-cli.phar /usr/local/bin/wp-cli"
+        "docker exec "+name+"_wp mv wp-cli.phar /usr/local/bin/wp-cli",
         "docker exec "+name+"_wp wp-cli --allow-root core install --url="+name+".isginnovation.fr --title='"+name+"' --admin_user="+login+" --admin_password=1q2W3e --admin_email=eliot.courtel@gmail.com"]
         globalcom = ""
         for i in commands:
